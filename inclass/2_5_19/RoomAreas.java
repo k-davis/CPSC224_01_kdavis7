@@ -53,8 +53,8 @@ public class RoomAreas
                   + den.getArea();
 
       // Display the total area of the rooms.
-      JOptionPane.showMessageDialog(null, "The total area " +
-                              "of the rooms is " + totalArea);
+      JOptionPane.showMessageDialog(null, "<html><p style=\"font-family: monospace\">The total area " +
+                              "of the rooms is " + totalArea + "</p></hmtl>");
 
       System.exit(0);
    }
