@@ -9,16 +9,14 @@ import javax.swing.JOptionPane;
 public class PetTester{
 	public static void main(String [] args){
 		Pet myPet = new Pet();
-		String input;
-
-		JOptionPane.showMessageDialog(null, "Your pet is " + myPet.getName() + " the " + myPet.getAnimal() + ", aged " + myPet.getAge() + ".");
+		String input = "y";
 
 		while(input.charAt(0) == 'y' || input.charAt(0) == 'Y'){
 			input = JOptionPane.showInputDialog("What kind of pet?");
 			myPet.setAnimal(input);
 
 			input = JOptionPane.showInputDialog("What is its name?");
-			myPet.setAnimal(input);
+			myPet.setName(input);
 
 			input = JOptionPane.showInputDialog("How old is " + myPet.getName() + "?");
 			myPet.setAge(Integer.parseInt(input));
